@@ -93,7 +93,7 @@ function createMap(position) {
 		var Alt = position.coords.altitude;
 
 		document.getElementById("latitude").innerHTML = "<strong>Latitude</strong>: " + Lat;
-		document.getElementById("longitude").innerHTML = "<b>strong>Longitude</strong>: " + Lng;
+		document.getElementById("longitude").innerHTML = "<strong>Longitude</strong>: " + Lng;
 	  document.getElementById("altitude").innerHTML = "<strong>Altitude</strong>: " + Alt;
   }
 
