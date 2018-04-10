@@ -52,11 +52,15 @@ function validateName() {
 }
 
 function validateMail() {
-	var mailInput = document.getElementById("email");
+	// var mailInput = document.getElementById("email");
 	// var error = document.getElementById("mailError");
+	var mailInput = $(this).val();
+	var pattern = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
 
 	try {
-     if (mailInput.value.search(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)) {
+     if
+		 //  (mailInput.value.search(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/))
+		 (!pattern.test(mailInput)) {
        throw "E-mail is not in a valid format.";
      }
       // mailInput.style.background = ""; // removes red background
@@ -71,7 +75,8 @@ function validateMail() {
 			$("#mailError").css("display", "block");
 			$("#mailError").html(msg);
       // change input style
-      mailInput.style.background = "rgb(255,233,233)";
+			// mailInput.style.background = "rgb(255,233,233)";
+      $("#email").css("background-color", "rgb(255,233,233)");
    }
 }
 
