@@ -53,19 +53,23 @@ function validateName() {
 
 function validateMail() {
 	var mailInput = document.getElementById("email");
-	var error = document.getElementById("mailError");
+	// var error = document.getElementById("mailError");
 
 	try {
      if (mailInput.value.search(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)) {
        throw "E-mail is not in a valid format.";
      }
-      mailInput.style.background = ""; // removes red background
-      error.style.display = "none"; // removes error message
+      // mailInput.style.background = ""; // removes red background
+      // error.style.display = "none"; // removes error message
+			$("#mailError").hide();
+			$("#email").css("background-color", "");
 	 }
 	 catch(msg) {
       // display error message
-      error.style.display = "block";
-      error.innerHTML = msg;
+      // error.style.display = "block";
+      // error.innerHTML = msg;
+			$("#error").css("display", "block");
+			$("#error").html(msg);
       // change input style
       mailInput.style.background = "rgb(255,233,233)";
    }
