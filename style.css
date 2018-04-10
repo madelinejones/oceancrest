@@ -49,6 +49,11 @@ header a, header a:visited, #submitBtn {
   text-transform: uppercase;
 }
 
+#main {
+  display: grid;
+  justify-content: center;
+}
+
 form {
   padding: 8px;
 }
