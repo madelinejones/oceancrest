@@ -68,8 +68,8 @@ function validateMail() {
       // display error message
       // error.style.display = "block";
       // error.innerHTML = msg;
-			$("#error").css("display", "block");
-			$("#error").html(msg);
+			$("#mailError").css("display", "block");
+			$("#mailError").html(msg);
       // change input style
       mailInput.style.background = "rgb(255,233,233)";
    }
