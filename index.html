@@ -27,54 +27,59 @@ Filename: index.html
       </div>
     </header>
     <main role="main" id="main">
-      <form>
-        <label for="name">
-          Name
-        </label>
-        <input type="text" id="name" name="user" required>
-        <p id="nameError" class="errorMsg"></p>
-        <label for="email">
-          E-mail address
-        </label>
-        <input type="email" id="email" name="user" required>
-        <p id="mailError" class="errorMsg"></p>
-        <fieldset>
-          <legend>What would you like to see on our menu?</legend>
-            <div class="checkDiv">
-              <input type="checkbox" value="Croissant French Toast" id="frenchToast" name="menu">
-              <label for="frenchToast">
-                Croissant French Toast
-              </label>
-            </div>
-            <div class="checkDiv">
-              <input type="checkbox" value="Eggs Benedict" id="eggsBene" name="menu">
-              <label for="eggsBene">
-                Eggs Benedict
-              </label>
-            </div>
-            <div class="checkDiv">
-              <input type="checkbox" value="Chicken & Waffles" id="chickenWaffles" name="menu">
-              <label for="turkeyPesto">
-                Chicken & Waffles
-              </label>
-            </div>
-            <div class="checkDiv">
-              <input type="checkbox" value="Grilled Cheese & Tomato Soup" id="grilledCheese" name="menu">
-              <label for="grilledCheese">
-                Grilled Cheese & Tomato Soup
-              </label>
-            </div>
-            <div class="checkDiv">
-              <input type="checkbox" value="Turkey & Pesto on French Bread" id="turkeyPesto" name="menu">
-              <label for="turkeyPesto">
-                Turkey & Pesto on French Bread
-              </label>
-            </div>
-          </fieldset>
-          <div class="btn">
-            <input type="submit" id="submitBtn">
-          </div>
-      </form>
+      <section id="signUp">
+        <h1>Coming soon to a beach near you</h1>
+        <div id="overlay">
+          <form>
+            <label for="name">
+              Name
+            </label>
+            <input type="text" id="name" name="user" required>
+            <p id="nameError" class="errorMsg"></p>
+            <label for="email">
+              E-mail address
+            </label>
+            <input type="email" id="email" name="user" required>
+            <p id="mailError" class="errorMsg"></p>
+            <fieldset>
+              <legend>What would you like to see on our menu?</legend>
+                <div class="checkDiv">
+                  <input type="checkbox" value="Croissant French Toast" id="frenchToast" name="menu">
+                  <label for="frenchToast">
+                    Croissant French Toast
+                  </label>
+                </div>
+                <div class="checkDiv">
+                  <input type="checkbox" value="Eggs Benedict" id="eggsBene" name="menu">
+                  <label for="eggsBene">
+                    Eggs Benedict
+                  </label>
+                </div>
+                <div class="checkDiv">
+                  <input type="checkbox" value="Chicken & Waffles" id="chickenWaffles" name="menu">
+                  <label for="turkeyPesto">
+                    Chicken & Waffles
+                  </label>
+                </div>
+                <div class="checkDiv">
+                  <input type="checkbox" value="Grilled Cheese & Tomato Soup" id="grilledCheese" name="menu">
+                  <label for="grilledCheese">
+                    Grilled Cheese & Tomato Soup
+                  </label>
+                </div>
+                <div class="checkDiv">
+                  <input type="checkbox" value="Turkey & Pesto on French Bread" id="turkeyPesto" name="menu">
+                  <label for="turkeyPesto">
+                    Turkey & Pesto on French Bread
+                  </label>
+                </div>
+              </fieldset>
+              <div class="btn">
+                <input type="submit" id="submitBtn">
+              </div>
+          </form>
+        </div>
+      </section>
       <div id="location">
          <div id="latitude"></div>
          <div id="longitude"></div>

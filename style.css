@@ -40,8 +40,9 @@ header a, header a:visited, #submitBtn {
   color: #fff;
   background-color: #4393ae;
   font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 18px;
   padding: 8px 14px;
-  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   border-radius: 5px;
@@ -49,10 +50,24 @@ header a, header a:visited, #submitBtn {
   text-transform: uppercase;
 }
 
-#main {
+#overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+}
+
+#signUp {
   padding: 16px;
   max-width: 960px;
   margin: auto;
+}
+
+#signUp h1 {
+  color: #4393ae;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
 }
 
 form {
