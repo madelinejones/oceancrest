@@ -50,6 +50,7 @@ header a, header a:visited, #submitBtn {
 }
 
 #main {
+  padding: 16px;
   max-width: 960px;
   margin: auto;
 }
