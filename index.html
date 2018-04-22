@@ -17,6 +17,7 @@ Filename: index.html
     <title>oceancrest café - Breakfast & Brunch</title>
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Muli:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
     <script src="modernizr.custom.05819.js"></script>
   </head>
   <body>
@@ -28,7 +29,8 @@ Filename: index.html
     </header>
     <main role="main" id="main">
       <section id="signUp">
-        <h1>Coming soon to a beach near you</h1>
+        <h1>Opening June 1st</h1>
+        <div id="progressbar"><div class="progress-label">Restaurant 75% complete!</div>
         <div id="overlay">
           <form>
             <label for="name">
@@ -91,6 +93,15 @@ Filename: index.html
       <div id="map"></div>
     </main>
     <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#progressbar" ).progressbar({
+          value: 75
+          }
+        });
+      } );
+    </script>
     <script src="script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKVqe0G5R27hfxc1WHErSke2Ml4OadkBM&callback=geoTest">
