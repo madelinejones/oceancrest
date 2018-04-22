@@ -30,7 +30,7 @@ Filename: index.html
     <main role="main" id="main">
       <section id="signUp">
         <h1>Opening June 1st</h1>
-        <div id="progressbar"><div class="progress-label">Restaurant 75% complete!</div>
+        <div id="progressbar"><div class="progress-label">Restaurant 75% complete!</div></div>
         <div id="overlay">
           <form>
             <label for="name">
@@ -96,8 +96,13 @@ Filename: index.html
     <script src="jquery-ui.js"></script>
     <script>
       $( function() {
+        var progressbar = $("#progressbar"),
+        progressLabel = $(".progress-label");
+
         $( "#progressbar" ).progressbar({
-          value: 75
+          value: 75,
+          change: function (){
+            progressLabel.text(progressbar.progressbar("value") + "% complete");
           }
         });
       } );
