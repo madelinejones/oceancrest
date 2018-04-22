@@ -55,6 +55,17 @@ header a, header a:visited, #submitBtn {
   padding: 16px;
 }
 
+.progressbar {
+  position: relative;
+}
+
+.progress-label {
+  position: absolute;
+  left: 50%;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
 #signUp {
   padding: 16px;
   max-width: 960px;
