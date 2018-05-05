@@ -1,15 +1,3 @@
-
-<!--
-JavaScript 6th Edition
-Chapter 10
-Individual Case Project
-
-Author: Madeline Jones
-Date: 3/31/2018
-
-Filename: index.html
--->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,8 +17,6 @@ Filename: index.html
     </header>
     <main role="main" id="main">
       <section id="signUp">
-        <h1>Opening June 1st</h1>
-        <div id="progressbar"><div class="progress-label">Restaurant 75% complete!</div></div>
         <div id="overlay">
           <form>
             <label for="name">
@@ -82,31 +68,9 @@ Filename: index.html
           </form>
         </div>
       </section>
-      <div id="location">
-         <div id="latitude"></div>
-         <div id="longitude"></div>
-         <div id="altitude"></div>
-      </div>
-      <div id="caption">
-         Your location
-      </div>
-      <div id="map"></div>
     </main>
     <script src="jquery-1.11.1.min.js"></script>
     <script src="jquery-ui.js"></script>
-    <script>
-      $( function() {
-        var progressbar = $("#progressbar"),
-        progressLabel = $(".progress-label");
-
-        $( "#progressbar" ).progressbar({
-          value: 75,
-          change: function (){
-            progressLabel.text(progressbar.progressbar("value") + "% complete");
-          }
-        });
-      } );
-    </script>
     <script src="script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKVqe0G5R27hfxc1WHErSke2Ml4OadkBM&callback=geoTest">
